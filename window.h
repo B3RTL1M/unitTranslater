@@ -4,13 +4,17 @@
 #include <QApplication>
 #include <QWidget>
 #include <QPushButton>
+#include <QTabWidget>
+#include <QGridLayout>
 
 class Window : public QWidget
 {
 	public:
-	Window();
+    Window();
 	
 	private:
 	QPushButton *m_quitButton;
-	QtabWidget *m_tabWidget;
-}
+    QTabWidget *m_tabWidget;
+    QGridLayout *m_layout;
+};
+#endif
