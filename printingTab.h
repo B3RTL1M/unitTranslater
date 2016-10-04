@@ -7,6 +7,7 @@
 #include <QHBoxLayout>
 #include <QFormLayout>
 #include <QLineEdit>
+#include <QDoubleValidator>
 #include <math.h>
 
 class PrintingTab : public QWidget
