@@ -7,6 +7,7 @@
 #include <QHBoxLayout>
 #include <QFormLayout>
 #include <QLineEdit>
+#include <math.h>
 
 class PrintingTab : public QWidget
 {
@@ -14,6 +15,18 @@ class PrintingTab : public QWidget
 	
 	public:
     PrintingTab(QWidget *parent = 0);
+	
+	protected:
+	void recalculPx();
+	void recalculDist();
+	
+	public slots:
+	void calculDistFromMm();
+	void calculDistFromInch();
+	void calculResFromDpi();
+	void calculResFromMmpx();
+	void calculResFromPxmm();
+	void calculPxFromPx();
 	
 	private:
     QGroupBox *m_distGroupBox;
